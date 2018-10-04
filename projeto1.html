@@ -1,0 +1,109 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <form class="form-login" action="lista.html" method="post" autocomplete="on">
+
+        <header>
+            <h1>Cadastro de Pessoa Física</h1>
+        </header>
+
+        <article>
+            <section class="form-group">
+                <label>Nome:</label>
+                <input class="form-control" id="idName" type="text" required="required">
+            </section>
+
+            <section class="form-group">
+                <label>Sobrenome:</label>
+                <input class="form-control" id="idSobrenome" type="text" required="required">
+            </section>
+
+            <section class="form-group">
+                <label>CPF:</label>
+                <input class="form-control" id="idCpf" type="text" required="required">
+            </section>
+
+            <section class="form-group">
+                <label>Data de Nascimento:</label>
+                <input class="form-control" id="idNascimento" type="date" required="required" placeholder="mm/dd/yyyy">
+            </section>
+
+            <section class="form-group">
+                <label>Sexo:</label>
+
+                <input id="idSexoM" name="sexo" value="m" type="radio" required="required"><label for="idSexoM">Masculino</label>
+                <input id="idSexoF" name="sexo" value="f" type="radio" required="required"><label for="idSexoF">Feminino</label>
+            </section>
+
+            <section class="form-group">
+                <label>Endereço:</label>
+                <input class="form-control" id="idEndereco" type="text" required="required">
+            </section>
+
+            <section class="form-group">
+                <label>Cidade:</label>
+                <select class="form-control form-control-sm" name="" id="idCidade">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">Hortolândia</option>
+                    <option value="BA">Salvador</option>
+                    <option value="SP2">Tutóia</option>
+                </select>
+            </section>
+
+            <section class="form-group">
+                <label>CEP:</label>
+                <input class="form-control" id="idCep" type="text" required="required">
+            </section>
+
+            <section class="form-group">
+                <label>Email:</label>
+                <input class="form-control" id="idEmail" type="email" required="required" placeholder="example@email.com">
+            </section>
+
+            <section class="form-group">
+                <label>Telefone:</label>
+                <input class="form-control" id="idTelefone" type="text" required="required">
+            </section>
+
+            <section class="form-group">
+                <label>Deseja receber Email?:</label>
+
+                <input id="idSim" name="opcao" value="s" type="radio" required="required"><label for="idSim">Sim</label>
+                <input id="idNao" name="opcao" value="n" type="radio" required="required"><label for="idNao">Nao</label>
+            </section>
+
+            <section class="form-group">
+                <label>Comentários:</label>
+                <textarea class="form-control" name="comentario" id="idComentario" cols="30" rows="5"></textarea>
+
+            </section>
+
+            <section class="form-group">
+                <label>Sua Foto:</label>
+                <input type="file" name="arquivo" id="idFile">
+
+            </section>
+
+
+
+            <section class="form-group">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Cadastrar</button>
+            </section>
+
+
+        </article>
+    </form>
+
+
+</body>
+
+</html>
